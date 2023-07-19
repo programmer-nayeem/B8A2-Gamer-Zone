@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Universal Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans'  , sans-serif;
+}
+/* Common shared styles */
+.btn-primary{
+    background: #F948B2;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: #fff;
+}
+/* Header styling */
+header nav{
+    padding: 1em 8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav .logo img{
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3C354F;
+    font-weight: 500;
+}
+nav ul .active{
+    background: rgba(11, 2, 35, 0.10);
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin: 5px;
+}
+nav ul .active .fa-brands{
+    margin: 3px;
+    font-size: 18px;
+}
+.baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8em;
+}
+.baner-text{
+    row-gap: 15px;
+}
+.baner .baner-text h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.baner .baner-text h1{
+    font-size: 80px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.baner .baner-text p{
+    margin-top: 7px;
+    color: #534C64;
+}
+.baner .baner-text p .fa-solid{
+    color: #F948B2;
+    font-size: 20px;
+}
+.baner .baner-img img{
+    width: 83%;
+    /* margin-left:18em;
+    margin-top: 6.4em; */
+}
+.different-btn{
+    background: #4EC5F7;
+}
+
+
+/* Responsive for Mobile Deveice */
+@media screen and (max-width:576px) {
+    header nav{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .baner{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        padding-left: 4em;
+    }
+    .baner .baner-text{
+        margin-top: 50px;
+        padding-right: 10px;
+    }
+    .baner .baner-text h1{
+        font-size: 60px;
+    }
+}
