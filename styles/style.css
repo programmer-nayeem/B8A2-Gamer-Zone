@@ -4,7 +4,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Work Sans'  , sans-serif;
 }
 /* Common shared styles */
@@ -15,10 +14,28 @@
     border-radius: 50px;
     margin-top: 20px;
     color: #fff;
+    cursor: pointer;
+}
+.title-primary{
+    font-size: 35px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title2-primary{
+    font-size: 35px;
+    font-weight: 800;
+    color:  #0B0223;
+}
+.desc-primary{
+    color: #534C64;
+    font-size: 16px;
 }
 /* Header styling */
 header nav{
-    padding: 1em 8em;
+    margin: 1em 8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,6 +103,91 @@ nav ul .active .fa-brands{
     background: #4EC5F7;
 }
 
+/* We are gamer styling */
+.gamer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 8em;
+}
+.gamer-text{
+    text-align: right;
+    width: 45%;
+}
+.gamer-text h5{
+    font-size: 16px;
+    color: #534C64;
+}
+.gamer-text h3{
+    color: #534C64;
+}
+.gamer-img img{
+    width: 100%;
+}
+
+/* Online game styling */
+.online-game{
+    margin: 5em 8em 0em 8em;
+    text-align: center;
+}
+.online-game .game-card{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    cursor: pointer;
+}
+.online-game .game-card div img{
+    width: 95%;
+}
+.online-game .game-card div > p{
+    text-align: left;
+    margin-top: 1em;
+}
+.play{
+    position: relative;
+}
+.play-btn{
+    width: 95%;
+    height: 84%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.fa-solid{
+    font-size: 50px;
+    color: #fff;
+}
+.play-btn:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive for Mobile Deveice */
 @media screen and (max-width:576px) {
@@ -105,5 +207,70 @@ nav ul .active .fa-brands{
     }
     .baner .baner-text h1{
         font-size: 60px;
+    }
+
+    .gamer{
+        flex-direction: column;
+        margin: 0em 0em;
+        margin-top: 4em;
+    }
+    .gamer-text{
+        text-align: center;
+        width: 80%;
+    }
+
+
+    .online-game{
+        margin: 0em 4em;
+        margin-top: 5em;
+    }
+    .online-game .game-card{
+        grid-template-columns: repeat(1 , 1fr);
+        cursor: pointer;
+        text-align: center;
+    }
+    .online-game .game-card div {
+        margin: 20px 0px;
+    }
+    .online-game .game-card div > p{
+        text-align: center;
+    }
+}
+
+
+/* Responsive for Tablet Deveice */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    header nav{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .baner{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .baner .baner-text{
+        margin-top: 60px;
+        margin-right: 30px;
+    }
+    .gamer{
+        flex-direction: column;
+        margin: 0em 0em;
+        margin-top: 4em;
+    }
+    .gamer-text{
+        text-align: center;
+        width: 80%;
+    }
+
+
+    .online-game .game-card{
+        grid-template-columns: repeat(2 , 1fr);
+        cursor: pointer;
+        text-align: center;
+    }
+    .online-game .game-card div {
+        margin: 20px 0px;
     }
 }
