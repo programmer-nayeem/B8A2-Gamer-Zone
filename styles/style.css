@@ -169,8 +169,32 @@ nav ul .active .fa-brands{
     opacity: 1;
 }
 
+/* Play games section styling */
+.play-games{
+    margin: 0em 8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8em;
+}
+.play-games .play-games-img img{
+    width: 75%;
+}
+.play-games .play-games-img .sub-img img{
+    width: 70%;
+}
+.play-games-img{
+    position: relative;
+}
+.sub-img{
+    position: absolute;
+    bottom: -80px;
+    right: -60px;
+}
 
-
+.play-games-text{
+    width: 40%;
+}
 
 
 
@@ -235,6 +259,33 @@ nav ul .active .fa-brands{
     .online-game .game-card div > p{
         text-align: center;
     }
+
+    .play-games{
+        margin: 0em 0em;
+        align-items: center;
+        margin-top: 8em;
+        flex-direction: column-reverse;
+    }
+    .play-games-text{
+        width: 80%;
+        text-align: center;
+    }
+    .play-games-img{
+        margin-top: 4em;
+        text-align: center;
+    }
+
+    .play-games .play-games-img img{
+        width: 70%;
+    }
+    .play-games .play-games-img .sub-img img{
+        width: 60%;
+    }
+    .sub-img{
+        position: absolute;
+        bottom: -100px;
+        right: 60px;
+    }
 }
 
 
@@ -272,5 +323,31 @@ nav ul .active .fa-brands{
     }
     .online-game .game-card div {
         margin: 20px 0px;
+    }
+    .play-games{
+        margin: 0em 0em;
+        align-items: center;
+        margin-top: 8em;
+        flex-direction: column-reverse;
+    }
+    .play-games-text{
+        width: 80%;
+        text-align: center;
+    }
+    .play-games-img{
+        margin-top: 4em;
+        text-align: center;
+    }
+
+    .play-games .play-games-img img{
+        width: 70%;
+    }
+    .play-games .play-games-img .sub-img img{
+        width: 70%;
+    }
+    .sub-img{
+        position: absolute;
+        bottom: -100px;
+        right: 200px;
     }
 }
